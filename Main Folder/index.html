@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasintha Madhushan</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/083c6e6b1a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./img/logo001.png" alt="logo" class="nav_Logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact ">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header_texts header-titles">
+          <p>Web Developer</p>
+          <h1>
+            Hello, I'm <span> Hasintha </span> <br />
+            Madhushan from Colombo
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------About-------------------------- -->
+    <div id="about">
+      <div class="about_container">
+        <div class="sections">
+          <div class="about_sec1">
+            <img src="./img/new.jpg" alt="userIMG" class="about_img" />
+          </div>
+          <div class="about_sec2">
+            <h1 class="about_title">About Me</h1>
+            <p>
+              I am a motivated undergraduate, currently following a B.Sc (Hons)
+              Information Technology degree offered by SLIIT at Malabe. I am a
+              well- organized, collaborative team player with strong
+              communication and analytical skills. I consider every challenge I
+              get as an opportunity to improve my skills. I would like to use my
+              skills to contribute productively and positively to fulfill the
+              goals of the organization while improving my knowledge through
+              hands- on learning and development work
+            </p>
+            <div class="sub_tabs">
+              <p class="tabs1 active_link" onclick="changeTab('skills')">
+                Skills
+              </p>
+              <p class="tabs1" onclick="changeTab('experience')">
+                Project Experience
+              </p>
+              <p class="tabs1" onclick="changeTab('education')">
+                Professional Qualifications
+              </p>
+            </div>
+            <div class="tab_contents active_tab" id="skills">
+              <ul>
+                <li>
+                  <span>Technical Skills</span><br />
+                  MERN stack - MongoDB, Express, JSReact, Node.JS<br />
+                  JavaScript, Python <br />
+                  HTML / CSS <br />
+                  Database- SQL
+                </li>
+                <li>
+                  <span>Soft Skills</span><br />Leadership Skills <br />
+                  Adaptability skills<br />
+                  Well-Organized<br />
+                  Communication Skills<br />
+                  Team Player
+                </li>
+                <li>
+                  <span>Designing Skills </span><br />Photoshop <br />
+                  Figma
+                </li>
+              </ul>
+            </div>
+            <div class="tab_contents" id="experience">
+              <ul>
+                <li>
+                  <span>Jun 2021 - Oct 2021</span><br />
+                  Online Shopping Website
+                  <br />
+                  A website sell clothing items online. JavaScript, Node js,
+                  React, Bootstrap, and CSS, are used for the implementation of
+                  the website. "MongoDB " is used for storing data. Visual
+                  Studio was used for developing this website
+                </li>
+                <li>
+                  <span>Jun 2021 - Nov 2021</span><br />Mobile Budgeting Apps
+                  <br />
+                  This app can keep records daily spending details. Java
+                  language is used for the implementation of this mobile app.
+                  "Firebase " is used for storing data. Android Studio was used
+                  for developing this app.
+                </li>
+                <li>
+                  <span>Feb 2021</span><br />Online Staff Management System
+                  <br />Java language used for implement this web app.
+                </li>
+              </ul>
+            </div>
+            <div class="tab_contents" id="education">
+              <ul>
+                <li>
+                  <span>Dec 2019 - Present</span><br />BSc (Hons) in Information
+                  Technology <br />Sri Lanka Institute of Information Technology
+                  (SLIIT), Malabe
+                </li>
+                <li>
+                  <span>Oct 2018 - Mar 2019</span><br />Certificate in Microsoft
+                  Office <br />Jayasekera Management Centre · JMC, Kiribathgoda
+                </li>
+                <li>
+                  <span>Oct 2017 - Mar 2018</span><br />Spoken English Diploma
+                  <br />
+                  Wasity Higher Education Institute, Kiribathgoda
+                </li>
+                <li>
+                  <span>Apr 2017 - Apr 2018</span><br />Diploma in English
+                  <br />ESOFT Metro Campus, Kiribathgoda
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------Contact-------------------------- -->
+
+    <div class="" id="contact">
+      <div class="container">
+        <div class="sections">
+          <div class="left_section">
+            <h1 class="sub_title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              hasintha19981214@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +94 72 071 7756</p>
+            <div class="social_links">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="downloadBtn">
+              <a href="./Hasintha madhushan Resume .pdf" download class="cv_Btn"
+                >Download Cv</a
+              >
+            </div>
+          </div>
+          <div class="right_section">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="cv_Btn btns">Submit</button>
+            </form>
+            <span id="alert"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Hasintha. Made by Hasintha Madhushan</p>
+      </div>
+    </div>
+
+    <script>
+      let secLink = document.getElementsByClassName("tabs1");
+      let tabContent = document.getElementsByClassName("tab_contents");
+
+      function changeTab(tabname) {
+        for (secLinks of secLink) {
+          secLinks.classList.remove("active_link");
+        }
+        for (tabContents of tabContent) {
+          tabContents.classList.remove("active_tab");
+        }
+
+        event.currentTarget.classList.add("active_link");
+        document.getElementById(tabname).classList.add("active_tab");
+      }
+    </script>
+    <script>
+      let sidemenus = document.getElementById("sidemenu");
+
+      function openMenu() {
+        sidemenus.style.right = "0";
+      }
+      function closeMenu() {
+        sidemenus.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw8vR0Xzi9Kae0Qouv4sK647QXwlnXYHpTnMBPWIW2m7XqFLmMaGSvRXck5_lreoxgfhQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const sendMsg = document.getElementById("alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            sendMsg.innerHTML = "Successful";
+            setTimeout(function () {
+              sendMsg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
